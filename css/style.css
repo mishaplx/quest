@@ -1,0 +1,412 @@
+/*ОБНУЛЕНИЕ*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none; }
+  
+  nav, footer, header, aside {
+    display: block; }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  input, button, textarea {
+    font-family: inherit; }
+  
+  input::-ms-clear {
+    display: none; }
+  
+  button {
+    cursor: pointer; }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  
+  a, a:visited {
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul li {
+    list-style: none; }
+  
+  img {
+    vertical-align: top; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit; }
+  
+
+/*ОБНУЛЕНИЕ*/
+
+.wrapper{
+    margin: 0px 50px 0px 94px;
+}
+.content{
+    margin: 0px auto;
+}
+.grid {
+}
+.grid__body {
+    display: grid;
+    grid-template:900px 355px 100px 1563px 474px 100px / 1fr; /*сначала ряды потом колонки  РЯДЫ / КОЛОНКИ*/
+    
+}
+
+/*HEADER*/
+.grid__header {
+    background: url(/img/workplace.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.content_header{
+    position: fixed;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    
+}
+
+.img_link{
+    display: inline-block;
+    padding-top:30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.block__nav{
+    padding-top: 35px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.block__nav-item{
+   margin-left: 34px;
+}
+.block__nav-item a:hover{
+    transition: 0.5s;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(315deg, #5BD1BC, #B95ADB);
+  
+}
+.block__nav-item a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.title{
+    position: static;
+    text-align: center;
+    padding-top: 89px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #5BD1BC;
+}
+/*HEADER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMATION*/
+
+.grid__animation {
+    background: url(/img/covid19.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animation__item{
+    padding-top: 27px;
+    display: inline-block;
+}
+.animation__item img{
+    margin-right: 20px;
+}
+img::after{
+    content: "2-3 ЧЕЛОВЕКА ";
+}
+.animation__item h2{
+    
+    padding-bottom: 9px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+
+    color: #C0C0C0;
+}
+.animation__item p{
+    display: inline;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+
+    color: #C0C0C0;
+
+}
+.animation__item button{
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+
+    color: #C0C0C0;
+    border: 3px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 23px;
+    width: 293.19px;
+    height: 64px;
+    border-radius: 36px;
+    background-color: transparent;
+}
+.animation__item button:hover{
+    color: white;
+    border: 3px solid white;
+
+}
+.animation__item button:active{
+    color: rgb(221, 221, 221);
+    border: 3px solid rgb(221, 221, 221);
+}
+.rectangle{
+    position: relative;
+}
+.rectangle__flex{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+.rectangle__body{
+    position: absolute;
+    left: 1197px;
+    width: 30px;
+    height: 30px;
+    background: #C0C0C0;
+    margin-bottom: 34px;
+}
+.rectangle__body:hover{
+    background: #5BD1BC;
+    width: 35px;
+    height: 35px;
+}
+/*ANIMATION*/
+/*TITLE*/
+.grid__title {
+    padding: 28px 0px 0px 0px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: #C0C0C0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+}
+/*TITLE*/
+/*QUEST*/
+.grid__quest {
+    
+
+}
+.gridblock {
+}
+.gridblock__body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 521px);
+}
+.gridblock__items {
+ 
+
+}
+.left{
+    background: url(/img/key.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    background: url(/img/men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*QUEST*/
+/*WHYME*/
+.grid__whyme{
+    background: #C0C0C0;
+    
+}
+.grid__whyme p{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 71px;
+    margin-bottom: 65px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+}
+.blockwhyme{
+   
+    
+    width: 847px;
+    height: 215.82px;
+    border: 1px dashed black;
+}
+
+.blockwhyme__flex{
+    display: flex;
+    justify-content: space-around;
+}
+.block__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:0px 27px 50px 0px;
+
+    color: #000000;
+}
+
+.block__subtitle{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 155.4%;
+/* or 19px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+/*WHYME*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.grid__footer {
+        width:100%;
+        height: 115px;
+        background-color: black;
+    }
+    .footer__block{
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-end;
+    }
+    .root{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        color: #ffffff;
+    }
+    .social{
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .footer__block-vk{
+     margin-right: 10px;
+    }
+    
+.wrap{
+    margin: 0px 143px 0px 100px;
+}
