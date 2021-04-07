@@ -76,7 +76,7 @@
 
 /*HEADER*/
 .grid__header {
-    background: url(/img/workplace.png);
+    background: url(/img/webp/workplace.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,6 +89,7 @@
 .header{
     width: 100%;
     height: 100px;
+    position: fixed;
     
 }
 
@@ -98,9 +99,16 @@
 }
 .nav{
     display: flex;
+    
     justify-content: space-between;
     
 }
+.header:hover{
+  background-color: rgba(65, 65, 65, 0.9);
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
 .block__nav{
     padding-top: 35px;
     display: flex;
@@ -131,7 +139,7 @@
 .title{
     position: static;
     text-align: center;
-    padding-top: 89px;
+    margin-top: 100px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900;
@@ -142,23 +150,7 @@
 }
 /*HEADER*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*ANIMATION*/
-
 .grid__animation {
     background: url(/img/covid19.png);
     background-size: cover;
@@ -166,15 +158,47 @@
     background-position: center;
 }
 .animation__item{
-    padding-top: 27px;
+    margin-top: 27px;
     display: inline-block;
 }
-.animation__item img{
+.big-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 20px;
+  }
+.flex:last-child{
+    margin: 0px;
 }
-img::after{
-    content: "2-3 ЧЕЛОВЕКА ";
-}
+  .flex-info{
+    color: #C0C0C0;
+    padding-top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+  
+  }
+  .text-img{
+    color: #C0C0C0;
+    padding-top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .text-img:hover{
+    transition: 0.2s;
+    text-decoration-line: underline;
+  
+  color: #24BC8E;
+  }
 .animation__item h2{
     
     padding-bottom: 9px;
@@ -234,20 +258,25 @@ img::after{
     border: 3px solid rgb(221, 221, 221);
 }
 .rectangle{
-    position: relative;
+   position: relative;
 }
 .rectangle__flex{
+    position: absolute;
+    top: -250px;
+    left: 1200px;
     display: inline-flex;
     flex-direction: column;
-    position: relative;
+    
 }
 .rectangle__body{
-    position: absolute;
-    left: 1197px;
+    margin-bottom: 40px;
     width: 30px;
     height: 30px;
     background: #C0C0C0;
-    margin-bottom: 34px;
+    
+}
+.rectangle__body:last-child{
+    margin: 0px;
 }
 .rectangle__body:hover{
     background: #5BD1BC;
@@ -297,6 +326,123 @@ img::after{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*block-quest*/
+.grid__item1{
+    background:url(/img/tyre-flipping.jpg);
+    background-repeat: no-repeat;
+    background-size: 719px 521px;
+  }
+  .grid__item2{
+    background:url(/img/covid-19.jpg);
+    background-repeat: no-repeat;
+    background-size: 719px 521px;
+  }
+  .grid__item3{
+    background:url(/img/safe.jpg);
+    background-repeat: no-repeat;
+    background-size: 719px 521px;
+  }
+  .grid__item4{
+    background:url(/img/key.jpg);
+    background-repeat: no-repeat;
+    background-size: 719px 521px;
+  }
+  .grid__item5{
+    background:url(/img/Rectangle\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: 719px 521px;
+  }
+  .grid__item6{
+    background:url(/img/team.jpg);
+    background-repeat: no-repeat;
+    background-size: 719px 521px;
+  }
+  .wrap-item{
+    margin: 0px 84px 0px 94px;
+  }
+  .grid-item .title-text{
+      padding-top: 24px;
+    text-align: center;
+    height: 72px;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  
+    color: #C0C0C0;
+  }
+  .subtitle{
+    margin-top: 38px;
+    margin-bottom: 38px;
+    height: 279px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #C0C0C0;
+  
+  }
+  .subtitle h6{
+    text-align: center;
+    padding-top: 63px;
+    padding-bottom: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+  .subtitle__text{
+    text-align: center;
+    margin: 0 auto;
+    width: 362.99px;
+    height: 80px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+  .buttom__item{
+    text-align: center;
+    margin-top: 13px;
+  }
+  .buttom__item button{
+      
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+  
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  
+    color: #C0C0C0;
+    border: 3px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 23px;
+    width: 293.19px;
+    height: 64px;
+    border-radius: 36px;
+    background-color: transparent;
+  }
+  .buttom__item button:hover{
+    color: #24BC8E;
+    border: 3px solid #24BC8E;
+  
+  }
+  .buttom__item button:active{
+    color: rgb(221, 221, 221);
+    border: 3px solid rgb(221, 221, 221);
+  }
+/*block-quest*/
 /*QUEST*/
 /*WHYME*/
 .grid__whyme{
@@ -319,18 +465,23 @@ img::after{
     letter-spacing: 0.02em;
 }
 .blockwhyme{
-   
-    
+    margin: 0 auto;
     width: 847px;
     height: 215.82px;
-    border: 1px dashed black;
 }
-
+.block__item{
+    margin-right: 10px;
+}
+.block__item:last-child{
+    margin: 0px;
+}
 .blockwhyme__flex{
     display: flex;
     justify-content: space-around;
 }
+
 .block__title{
+    margin-bottom: 10px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -338,46 +489,33 @@ img::after{
     line-height: 22px;
     text-align: center;
     text-transform: uppercase;
-    padding:0px 27px 50px 0px;
+    
 
     color: #000000;
 }
-
+.block__subtitle:before{
+  content: '';
+  width: inherit;
+  height: 3px;
+  display: block;
+  margin: 20px 0px 26px;
+  background-color: rgb(0, 0, 0);
+}
+.block__subtitle:hover:before{
+ background-color: #24BC8E;
+}
 .block__subtitle{
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 155.4%;
-/* or 19px */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 155.4%;
+  text-align: center;
+  text-transform: uppercase;
 
-text-align: center;
-text-transform: uppercase;
-
-color: #000000;
+  color: #000000;
 }
 /*WHYME*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*FOOTER*/

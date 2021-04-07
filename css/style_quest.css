@@ -1,20 +1,64 @@
-
-html,body{
-    margin: 0;
+/*ОБНУЛЕНИЕ*/
+* {
     padding: 0;
-    border: 0;
-    background-color: #E9E8E8;
-}
-h1,h2,h3,h4,h5,h6,p{
-    margin: 0px;
-}
-html{
-    box-sizing: border-box;
+    margin: 0;
+    border: 0; }
+  
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none; }
+  
+  nav, footer, header, aside {
+    display: block; }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  input, button, textarea {
+    font-family: inherit; }
+  
+  input::-ms-clear {
+    display: none; }
+  
+  button {
+    cursor: pointer; }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  
+  a, a:visited {
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul li {
+    list-style: none; }
+  
+  img {
+    vertical-align: top; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit; }
+  
 
-}
-*, *::before, *::after{
-    box-sizing: inherit;
-}
+/*ОБНУЛЕНИЕ*/
 .header{
     width: 100%;
     height: 100px;
@@ -29,6 +73,7 @@ html{
     padding-top:30px;
 }
 .nav{
+  
     display: flex;
     justify-content: space-between;
     
@@ -79,81 +124,169 @@ html{
     color: #C0C0C0;
     padding-top: 28px;
 }
-.block-quest{
+
+.wrap-item{
+  margin: 0px 84px 0px 94px;
+}
+.grid{
+  width: 100%;
+  height: 1563px;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: repeat(6,minmax(521px,550px));
+}
+
+.grid__item1{
+  background:url(/img/tyre-flipping.jpg);
+  background-repeat: no-repeat;
+  background-size: 719px 521px;
+}
+.grid__item2{
+  background:url(/img/covid-19.jpg);
+  background-repeat: no-repeat;
+  background-size: 719px 521px;
+}
+.grid__item3{
+  background:url(/img/safe.jpg);
+  background-repeat: no-repeat;
+  background-size: 719px 521px;
+}
+.grid__item4{
+  background:url(/img/key.jpg);
+  background-repeat: no-repeat;
+  background-size: 719px 521px;
+}
+.grid__item5{
+  background:url(/img/Rectangle\ 3.jpg);
+  background-repeat: no-repeat;
+  background-size: 719px 521px;
+}
+.grid__item6{
+  background:url(/img/team.jpg);
+  background-repeat: no-repeat;
+  background-size: 719px 521px;
+}
+.title{
+  text-align: center;
+  padding-top: 24px;
+  height: 72px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+
+  color: #C0C0C0;
+}
+.subtitle{
+  margin-top: 38px;
+  margin-bottom: 38px;
+  height: 279px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #C0C0C0;
+
+}
+.subtitle h6{
+  text-align: center;
+  padding-top: 63px;
+  padding-bottom: 35px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+.subtitle__text{
+  text-align: center;
+  margin: 0 auto;
+  width: 362.99px;
+  height: 80px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+.buttom__item{
+  text-align: center;
+  margin-top: 13px;
+}
+.buttom__item button{
     
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+
+  color: #C0C0C0;
+  border: 3px solid #C0C0C0;
+  box-sizing: border-box;
+  border-radius: 23px;
+  width: 293.19px;
+  height: 64px;
+  border-radius: 36px;
+  background-color: transparent;
 }
-.block-quest-items{
-    background: url(/img/covid-19.jpg) center no-repeat;
-    background-size: cover;
-    width: 50%;
-    height: 521px;
+.buttom__item button:hover{
+  color: #24BC8E;
+  border: 3px solid #24BC8E;
+
 }
-.block-wrap{
-    margin: 0px 20px;
-}
-.block-quest-item1{
-    background: rgba(0, 0, 0, 0.5);
-    height: 72px;
-    width: 100%;
-    color:#C0C0C0;
-    font-family: Montserrat;
-    text-align: center;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.045em;
-    text-transform: uppercase;
-    margin-bottom: 38px;
-}
-.block-quest-item1 p{
-    padding: 24px;
+.buttom__item button:active{
+  color: rgb(221, 221, 221);
+  border: 3px solid rgb(221, 221, 221);
 }
 
-.block-quest-item2{
-    background: rgba(0, 0, 0, 0.5);
-    height: 279px;
-    width: 100%;
-    text-align: center;
-    
+
+.big-flex{
+  display: flex;
+  justify-content: space-between;
 }
-.blocck-quest-wrap{
-    margin: 0px 178px;
+.flex{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.flex-info{
+  color: #C0C0C0;
+  padding-top: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+
+}
+.text-img{
+  color: #C0C0C0;
+  padding-top: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+}
+.text-img:hover{
+  transition: 0.2s;
+  text-decoration-line: underline;
+
+color: #24BC8E;
 }
 
-.block-quest-item2-title{
-    padding-top: 63px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 19px;
-    line-height: 23px;
-    letter-spacing: 0.045em;
-    text-transform: uppercase;
 
-    color: #C0C0C0;
-
-}.block-quest-item2-subtutle{
-    color: #E9E8E8;
-}
-
-button{
-    width: 169px;
-    height: 38px;
-    border: 3px solid #24BC8E;
-    box-sizing: border-box;
-    border-radius: 23px;
-    
-    background-color: transparent;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.045em;
-
-color: #C0C0C0;
-}
 button:hover{
     background-color: #2b2b2b;
     transition: 0.2s;
@@ -165,6 +298,15 @@ button:active {
 button:focus {
     outline: none; /*убрали рамку*/
 }
+
+
+
+
+
+
+
+
+/*FOOTER*/
 footer{
     width:100%;
     height: 115px;
@@ -191,3 +333,4 @@ footer{
  margin-right: 10px;
 }
 
+/*FOOTER*/

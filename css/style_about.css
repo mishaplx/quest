@@ -1,19 +1,66 @@
-
-html,body{
-    margin: 0;
+/*ОБНУЛЕНИЕ*/
+* {
     padding: 0;
-    border: 0;
-    background-color: #E9E8E8;
-}
-h1,h2,h3,h4,h5,h6{
-    margin: 0px;
-}
-html{
-    box-sizing: border-box;
+    margin: 0;
+    border: 0; }
+  
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none; }
+  
+  nav, footer, header, aside {
+    display: block; }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  input, button, textarea {
+    font-family: inherit; }
+  
+  input::-ms-clear {
+    display: none; }
+  
+  button {
+    cursor: pointer; }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  
+  a, a:visited {
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul li {
+    list-style: none; }
+  
+  img {
+    vertical-align: top; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit; }
+  
 
-}
-*, *::before, *::after{
-    box-sizing: inherit;
+/*ОБНУЛЕНИЕ*/
+body{
+  background: #E9E8E8;
 }
 .header{
     width: 100%;
@@ -90,8 +137,8 @@ h2{
  }
  .block{
      
-        margin-bottom: 67px;
-     padding-top: 36px;
+    margin-bottom: 67px;
+     padding-top: 41px;
  }
  .first-block, .second-block{
      display: flex;
@@ -104,6 +151,10 @@ h2{
     background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.87) 100%);
     color: white;
  }
+ .wrapblock{
+   margin: 0px 39px 0px 97px;
+   height: 390px;
+ }
  .block__items1{
     position: relative;
     background: #FFFFFF;
@@ -112,9 +163,8 @@ h2{
     
  }
 .block__items-title{
-    text-align: center;
-    margin-top: 79px;
-    margin-bottom: 30px;
+  padding: 79px 0px 20px 0px;
+    text-align: left;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -123,7 +173,7 @@ h2{
 
 }
 .block__items-text{
-    padding: 0px 90px;
+    
     text-align: left;
     font-family: Montserrat;
     font-style: normal;
@@ -151,6 +201,9 @@ h6{
     /* or 32px */
 
     text-decoration-line: underline;
+}
+.game, .rule-game{
+  margin-bottom: 36px;
 }
  li{
     font-family: Montserrat;
